@@ -1,0 +1,95 @@
+@import "compass/css3";
+
+body,html {
+  background : #4bc5c3;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight : 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  h1 {
+    text-align : center; 
+    color : white;
+    font-family: "Arial", arial, sans-serif;
+  }
+
+  section {
+    background : white;
+    margin : auto; 
+    width : 810px; 
+    padding : 20px; 
+    height : 200px;
+    padding-top : 50px;
+    border : 2px dashed rgba(#000,0.4);
+    @include border-radius(5px);
+  }
+}
+
+@include keyframes(fill){ 
+  0% {
+    height : 0%;
+  } 
+  60% {
+    height : 110%;
+  }
+  70% {
+    height : 95%;
+  }
+  80% {
+    height : 105%;
+  }
+  100%{
+    height : 100%;
+  }
+}
+
+.box {
+  width : 200px; 
+  height : 120px;  
+  position : relative;
+  display : inline-block; 
+
+
+  .container{
+    box-sizing : border-box; 
+    width : 100%; 
+    height: 100%;
+    position : absolute; 
+    bottom : 0;
+    z-index : 3;
+    text-align : center; 
+    color : white; 
+    font-size : 14px; 
+    padding-top : 15px;
+
+    .number {
+      font-size : 50px;    
+      margin-top : 25px;
+    }
+  }
+
+  .fill {
+    z-index : 2; 
+    @include border-radius(3px);
+    width : 100%; 
+    height: 100%;
+    position : absolute;  
+    bottom : 0;
+
+    &.speed1 {
+      @include animation(fill 1s ease-out);         
+    }
+
+    &.speed2 {
+      @include animation(fill 1.1s ease-out);         
+    }
+
+    &.speed3 {
+      @include animation(fill 1.2s ease-out);         
+    }
+
+    &.speed4 {
+      @include animation(fill 1.3s ease-out);         
+    }
+  }
+}
