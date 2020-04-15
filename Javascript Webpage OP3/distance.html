@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+      crossorigin="anonymous"
+    />
+    <title>Distance Converter</title>
+  </head>
+  <link
+    rel="icon"
+    href="assets/green-logo-400-shadow.png"
+    type="image/gif"
+    sizes="16x16"
+  />
+  <link rel="stylesheet" href="assets/index.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link
+    rel="icon"
+    href="assets/green-logo-400-shadow.png"
+    type="image/gif"
+    sizes="16x16"
+  />
+  <style type="text/css">
+    body {
+      background-image: url(https://images.unsplash.com/photo-1447927228194-acfa3d1b45c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover; /* Resize the background image to cover the entire container */
+      height: 100vh;
+      color: #ffffff;
+    }
+
+    .distance-converter {
+      position: absolute;
+      left: 50%;
+      top: 60%;
+      transform: translate(-50%, -50%);
+    }
+
+    
+  </style>
+
+  <body>
+    <nav>
+      <ul>
+       
+        <a href="index.html"><li>Home</li></a>
+        <a href="weight.html"><li>Weight Converter</li></a>
+        <a href="currency.html"><li>Currency Converter</li></a>
+        <a href="temp.html"><li>Temperature Converter</li></a>
+        <a href="distance.html"><li>Distance Converter</li></a>
+        <li class="slide"></li>
+      </ul>
+    </nav>
+    <section>
+        <div class="title" style="position: absolute; top: 10%; left: 62.5%; transform: translateX(-50%);">
+            <span>Currency Converter</span
+            ><span
+              ><a href="distance.html">Inches</a>,
+              <a  href="distance.html">Meters</a>,<a
+                
+                href="distance.html"
+                >Centimeters</a
+              >
+              &<a href="distance.html">Millimeters</a>
+              </span
+            >
+          </div>
+    </section>
+
+    <div class="distance-converter">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 offset-md-3">
+             
+              <div class="form-group">
+                <!-- <input type="radio" id="select_pound" name="weight"> From Pounds...<br>
+                          <input type="radio" id="select_kg" name="weight"> From Kilograms...<br>
+                          <input type="radio" id="select_grams" name="weight"> From Grams...<br>
+                          <input type="radio" id="select_ounces" name="weight"> From Ounces...<br> -->
+              </div>
+              <form>
+                <div class="form-group">
+                  <input
+                    type="number"
+                    id="distance_input"
+                    class="form-control form-control-lg"
+                    placeholder="Enter Distance in Inches..."
+                  />
+                </div>
+              </form>
+              <form>
+                <div class="form-group">
+                  <input
+                    type="number"
+                    id="distance_input_m"
+                    class="form-control form-control-lg"
+                    placeholder="Enter Distance in Meters..."
+                  />
+                </div>
+              </form>
+  
+              <form>
+                <div class="form-group">
+                  <input
+                    type="number"
+                    id="distance_input_cm"
+                    class="form-control form-control-lg"
+                    placeholder="Enter Distance in Centimeters..."
+                  />
+                </div>
+              </form>
+  
+              <form>
+                <div class="form-group">
+                  <input
+                    type="number"
+                    id="distance_input_mm"
+                    class="form-control form-control-lg"
+                    placeholder="Enter Distance in Millimeters..."
+                  />
+                </div>
+              </form>
+              <div id="output1">
+                  <div style="background-color: #3b3b3b;" class=" mb-2">
+                  <div class="card-block">
+                    <h4>Meters:</h4>
+                    <div id="meterOutput"></div>
+                  </div>
+                </div>
+  
+                <div style="background-color: #3b3b3b;" class=" mb-2">
+                  <div class="card-block">
+                    <h4>Centimeters:</h4>
+                    <div id="centimeterOutput"></div>
+                  </div>
+                </div>
+  
+                <div style="background-color: #3b3b3b;" class=" mb-2">
+                  <div class="card-block">
+                    <h4>Millimeters:</h4>
+                    <div id="millimeterOutput"></div>
+                  </div>
+                </div>
+              </div>
+              <div id="output2">
+                  <div style="background-color: #3b3b3b;" class=" mb-2">
+                  <div class="card-block">
+                    <h4>Inches:</h4>
+                    <div id="inchesOutput"></div>
+                  </div>
+                </div>
+  
+                <div style="background-color: #3b3b3b;" class=" mb-2">
+                  <div class="card-block">
+                    <h4>Centimeters:</h4>
+                    <div id="centimetersOutput"></div>
+                  </div>
+                </div>
+  
+                <div style="background-color: #3b3b3b;" class=" mb-2">
+                  <div class="card-block">
+                    <h4>Millimeters:</h4>
+                    <div id="millimetersOutput"></div>
+                  </div>
+                </div>
+              </div>
+  
+              <div id="output3">
+                  <div style="background-color: #3b3b3b;" class=" mb-2">
+                  <div class="card-block">
+                    <h4>Inches:</h4>
+                    <div id="inchessOutput"></div>
+                  </div>
+                </div>
+  
+                <div style="background-color: #3b3b3b;" class=" mb-2">
+                  <div class="card-block">
+                    <h4>Meters:</h4>
+                    <div id="metersOutput"></div>
+                  </div>
+                </div>
+  
+                <div style="background-color: #3b3b3b;" class=" mb-2">
+                  <div class="card-block">
+                    <h4>Millimeters:</h4>
+                    <div id="millimeterssOutput"></div>
+                  </div>
+                </div>
+              </div>
+  
+              <div id="output4">
+                  <div style="background-color: #3b3b3b;" class=" mb-2">
+                  <div class="card-block">
+                    <h4>Inches:</h4>
+                    <div id="inchesssOutput"></div>
+                  </div>
+                </div>
+  
+                <div style="background-color: #3b3b3b;" class=" mb-2">
+                  <div class="card-block">
+                    <h4>Meters:</h4>
+                    <div id="meterssOutput"></div>
+                  </div>
+                </div>
+  
+                <div style="background-color: #3b3b3b;" class=" mb-2">
+                  <div class="card-block">
+                    <h4>Centimeters:</h4>
+                    <div id="centimeterssOutput"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  
+
+    <script src="assets/distance.js"></script>
+
+    <script src="assets/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

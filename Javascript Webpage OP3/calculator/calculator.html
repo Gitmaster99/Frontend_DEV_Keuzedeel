@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+      crossorigin="anonymous"
+    />
+    <title>Javascript Calculator</title>
+  </head>
+  
+  <link
+    rel="icon"
+    href="../assets/green-logo-400-shadow.png"
+    type="image/gif"
+    sizes="16x16"
+  />
+  <link rel="stylesheet" href="../assets/index.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link
+    rel="icon"
+    href="../assets/green-logo-400-shadow.png"
+    type="image/gif"
+    sizes="16x16"
+  />
+  <link rel="stylesheet" href="assets/calculator.css" />
+
+
+  <body>
+    <nav>
+        <ul>
+          <a href="../index.html"><li>Home</li></a>
+          <a href="../conversions.html"><li>Conversions</li></a>
+          <a href="calculator.html"><li>Calculator</li></a>
+          <a href="../tic-tac-toe/tictactoe.html"><li>Tic Tac Toe</li></a>
+          <a href="../portfolio.html"><li>Portfolio</li></a>
+          <li class="slide"></li>
+        </ul>
+      </nav>
+    <section>
+      <div
+        class="title"
+        style="
+          position: absolute;
+          top: 25%;
+          left: 45%;
+          transform: translateX(-50%);
+          font-size: 10px;
+        "
+      >
+        <span style="font-size: 4vw; width: 25vw;">Javascript Calculator</span
+        ><span
+          ><a href="calculator.html">Several Functions and easy to use</a>
+        </span>
+      </div>
+    </section>
+
+    <div class="calculator">
+        <div class="main">
+            <form name="form">
+              <input type="text" class="textview" name="textview" />
+            </form>
+            <table>
+              <tr>
+                <td colspan="2">
+                  <input class="button" type="button" style="width: 248px;" value="C" onclick="clean()" />
+                </td>
+                <td>
+                  <input class="button" type="button" value="<" onclick="back()" />
+                </td>
+                <td>
+                  <input
+                    class="button"
+                    type="button"
+                    value="/"
+                    onclick="insert('/')"
+                  />
+                </td>
+                
+              </tr>
+      
+              <tr>
+                <td>
+                    <input
+                      class="button"
+                      type="button"
+                      value="x"
+                      onclick="insert('*')"
+                    />
+                  </td>
+                <td>
+                    <input class="button" type="button" value="x^y" onclick="insert('**')" />
+                </td>
+                <td>
+                    <input class="button" type="button" value="√" onClick="doSqrt()" />
+                </td>
+                <td>
+                    <input
+                    class="button"
+                    type="button"
+                    value="^2"
+                    onClick="doPow()"
+                  />
+                </td>
+              </tr>
+      
+              <tr>
+                <td>
+                  <input class="button" type="button" value="7" onclick="insert(7)" />
+                </td>
+                <td>
+                  <input class="button" type="button" value="8" onclick="insert(8)" />
+                </td>
+                <td>
+                  <input class="button" type="button" value="9" onclick="insert(9)" />
+                </td>
+                <td>
+                  <input
+                    class="button"
+                    type="button"
+                    value="-"
+                    onclick="insert('-')"
+                  />
+                </td>
+              </tr>
+      
+              <tr>
+                <td>
+                  <input class="button" type="button" value="4" onclick="insert(4)" />
+                </td>
+                <td>
+                  <input class="button" type="button" value="5" onclick="insert(5)" />
+                </td>
+                <td>
+                  <input class="button" type="button" value="6" onclick="insert(6)" />
+                </td>
+                <td>
+                  <input
+                    class="button"
+                    type="button"
+                    value="+"
+                    onclick="insert('+')"
+                  />
+                </td>
+              </tr>
+      
+              <tr>
+                <td>
+                  <input class="button" type="button" value="1" onclick="insert(1)" />
+                </td>
+                <td>
+                  <input class="button" type="button" value="2" onclick="insert(2)" />
+                </td>
+                <td>
+                  <input class="button" type="button" value="3" onclick="insert(3)" />
+                </td>
+                <td rowspan="5">
+                  <input
+                    class="button"
+                    style="height: 248px;"
+                    type="button"
+                    value="="
+                    onclick="equal()"
+                  />
+                </td>
+              </tr>
+      
+              <tr>
+                <td colspan="2">
+                  <input
+                    class="button"
+                    style="width: 248px;"
+                    type="button"
+                    value="0"
+                    onclick="insert(0)"
+                  />
+                </td>
+                <td>
+                  <input
+                    class="button"
+                    type="button"
+                    value="."
+                    onclick="insert('.')"
+                  />
+                </td>
+              </tr>
+            </table>
+          </div>
+          <br> <br>
+      
+          <script src="assets/calculator.js"></script>
+    </div>
+
+    <script src="../assets/currency.js"></script>
+
+    <script src="../assets/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  </body>
+</html>
+

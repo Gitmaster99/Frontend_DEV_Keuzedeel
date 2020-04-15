@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+      crossorigin="anonymous"
+    />
+    <title>Currency Converter</title>
+  </head>
+  <link
+    rel="icon"
+    href="assets/green-logo-400-shadow.png"
+    type="image/gif"
+    sizes="16x16"
+  />
+  <link rel="stylesheet" href="assets/index.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link
+    rel="icon"
+    href="assets/green-logo-400-shadow.png"
+    type="image/gif"
+    sizes="16x16"
+  />
+  <style type="text/css">
+    body {
+      background-image: url(https://images.unsplash.com/photo-1447927228194-acfa3d1b45c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover; /* Resize the background image to cover the entire container */
+      height: 100vh;
+      color: #ffffff;
+    }
+
+    .currency-converter {
+      position: absolute;
+      left: 50%;
+      top: 60%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+
+  <body>
+    <nav>
+      <ul>
+        <a href="index.html"><li>Home</li></a>
+        <a href="weight.html"><li>Weight Converter</li></a>
+        <a href="currency.html"><li>Currency Converter</li></a>
+        <a href="temp.html"><li>Temperature Converter</li></a>
+        <a href="distance.html"><li>Distance Converter</li></a>
+        <li class="slide"></li>
+      </ul>
+    </nav>
+    <section>
+      <div class="title" style="position: absolute; top: 10%; left: 62.5%; transform: translateX(-50%);">
+        <span>Currency Converter</span
+        ><span
+          ><a href="currency.html">Euro's</a>,
+          <a  href="currency.html">US Dollars</a>,<a
+            
+            href="currency.html"
+            >Canadian Dollars</a
+          >
+          &<a href="currency.html">GBP</a>
+          </span
+        >
+      </div>
+    </section>
+
+    <div class="currency-converter">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            
+            <div class="form-group">
+            
+            </div>
+            <form>
+              <div class="form-group">
+                <input
+                  type="number"
+                  id="currency_input"
+                  class="form-control form-control-lg"
+                  placeholder="Enter Currency in EUR..."
+                />
+              </div>
+            </form>
+            <form>
+              <div class="form-group">
+                <input
+                  type="number"
+                  id="currency_input_usd"
+                  class="form-control form-control-lg"
+                  placeholder="Enter Currency in USD..."
+                />
+              </div>
+            </form>
+
+            <form>
+              <div class="form-group">
+                <input
+                  type="number"
+                  id="currency_input_cad"
+                  class="form-control form-control-lg"
+                  placeholder="Enter Currency in CAD..."
+                />
+              </div>
+            </form>
+
+            <form>
+              <div class="form-group">
+                <input
+                  type="number"
+                  id="currency_input_gbp"
+                  class="form-control form-control-lg"
+                  placeholder="Enter Currency in GBP..."
+                />
+              </div>
+            </form>
+            <div id="output1">
+              <div style="background-color: #3b3b3b;" class=" mb-2">
+                <div class="card-block">
+                  <h4>USD:</h4>
+                  <div id="usdOutput"></div>
+                </div>
+              </div>
+
+              <div style="background-color: #3b3b3b;" class=" mb-2">
+                <div class="card-block">
+                  <h4>CAD:</h4>
+                  <div id="cadOutput"></div>
+                </div>
+              </div>
+
+              <div style="background-color: #3b3b3b;" class=" mb-2">
+                <div class="card-block">
+                  <h4>GBP:</h4>
+                  <div id="gbpOutput"></div>
+                </div>
+              </div>
+            </div>
+            <div id="output2">
+              <div style="background-color: #3b3b3b;" class=" mb-2">
+                <div class="card-block">
+                  <h4>EUR:</h4>
+                  <div id="eurOutput"></div>
+                </div>
+              </div>
+
+              <div style="background-color: #3b3b3b;" class=" mb-2">
+                <div class="card-block">
+                  <h4>CAD:</h4>
+                  <div id="caddOutput"></div>
+                </div>
+              </div>
+
+              <div style="background-color: #3b3b3b;" class=" mb-2">
+                <div class="card-block">
+                  <h4>GBP:</h4>
+                  <div id="gbppOutput"></div>
+                </div>
+              </div>
+            </div>
+
+            <div id="output3">
+              <div style="background-color: #3b3b3b;" class=" mb-2">
+                <div class="card-block">
+                  <h4>EUR:</h4>
+                  <div id="eurrOutput"></div>
+                </div>
+              </div>
+
+              <div style="background-color: #3b3b3b;" class=" mb-2">
+                <div class="card-block">
+                  <h4>USD:</h4>
+                  <div id="usddOutput"></div>
+                </div>
+              </div>
+
+              <div style="background-color: #3b3b3b;" class=" mb-2">
+                <div class="card-block">
+                  <h4>GBP:</h4>
+                  <div id="gbpppOutput"></div>
+                </div>
+              </div>
+            </div>
+
+            <div id="output4">
+              <div style="background-color: #3b3b3b;" class=" mb-2">
+                <div class="card-block">
+                  <h4>EUR:</h4>
+                  <div id="eurrrOutput"></div>
+                </div>
+              </div>
+
+              <div style="background-color: #3b3b3b;" class=" mb-2">
+                <div class="card-block">
+                  <h4>USD:</h4>
+                  <div id="usdddOutput"></div>
+                </div>
+              </div>
+
+              <div style="background-color: #3b3b3b;" class=" mb-2">
+                <div class="card-block">
+                  <h4>CAD:</h4>
+                  <div id="cadddOutput"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="assets/currency.js"></script>
+
+    <script src="assets/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+

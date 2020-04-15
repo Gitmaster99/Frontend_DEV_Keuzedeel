@@ -1,0 +1,14 @@
+body {
+  background-image: url("img_girl.jpg");
+}
+
+.weight-converter {
+  position: absolute;
+  left: 0;
+}
+
+.currency-converter {
+  position: absolute;
+  right: 0;
+}
+/*# sourceMappingURL=style.css.map */

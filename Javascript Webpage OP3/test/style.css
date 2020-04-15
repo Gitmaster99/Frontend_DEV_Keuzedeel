@@ -1,0 +1,102 @@
+/*/DON'T NEED THIS/*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    user-select: none;
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.container h1 {
+    padding: 30px;
+    font-size: 50px;
+    color: #f1b13c;
+    font-weight: 300;
+    text-shadow: 3px 3px 1px #47391d;
+    letter-spacing: 5px;
+}
+
+
+/*/DON'T NEED THIS/*/
+
+
+/*/USE THAT/*/
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 300px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #212121;
+    box-shadow: 3px 3px 5px #1b1a1a, -3px -3px 5px #2b2b2b;
+}
+
+.btn_click,
+.btn_hover,
+.btn_circle {
+    width: 100px;
+    height: 100px;
+    margin: 15px 10px;
+    border-radius: 10px;
+    background-color: #212121;
+    box-shadow: 3px 3px 5px #1b1a1a, -3px -3px 5px #2b2b2b;
+    border: none;
+    color: #f1b13c;
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.btn_circle {
+    border-radius: 50%;
+    background: linear-gradient(160deg, #1b1a1a 0%, #2b2b2b 100%);
+}
+
+.btn_click:active {
+    box-shadow: inset 3px 3px 5px #1b1a1a, inset -3px -3px 5px #2b2b2b;
+    transform: scale(0.98);
+    color: #32363d;
+}
+
+.btn_hover:hover {
+    box-shadow: inset 3px 3px 5px #1b1a1a, inset -3px -3px 5px #2b2b2b;
+    transform: scale(0.98);
+}
+
+.btn_circle:hover {
+    box-shadow: inset 3px 3px 15px #1b1a1a, inset -3px -3px 15px #2b2b2b;
+    transform: scale(0.98);
+    background: linear-gradient(180deg, #1b1a1a 0%, #2b2b2b 100%);
+}
+
+
+/*/USE THAT/*/

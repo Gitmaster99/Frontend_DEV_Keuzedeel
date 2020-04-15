@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+      crossorigin="anonymous"
+    />
+    <title>Tic Tac Toe Game</title>
+  </head>
+ 
+  <link
+    rel="icon"
+    href="../assets/green-logo-400-shadow.png"
+    type="image/gif"
+    sizes="16x16"
+  />
+  <link rel="stylesheet" href="../assets/index.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+<link rel="stylesheet" href="assets/main.css" />
+<link rel="stylesheet" href="assets/style.css" />
+  
+  <style type="text/css">
+    body {
+      background-image: url(https://images.unsplash.com/photo-1447927228194-acfa3d1b45c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover; /* Resize the background image to cover the entire container */
+      height: 100vh;
+      color: #ffffff;
+    }
+
+    .tic-tac-toe {
+      position: absolute;
+      left: 50%;
+      top: 60%;
+      transform: translate(-50%, -50%);
+      
+    }
+  </style>
+
+  <body>
+    <nav>
+        <ul>
+          <a href="../index.html"><li>Home</li></a>
+          <a href="../conversions.html"><li>Conversions</li></a>
+          <a href="../calculator/calculator.html"><li>Calculator</li></a>
+          <a href="tictactoe.html"><li>Tic Tac Toe</li></a>
+          <a href="../portfolio.html"><li>Portfolio</li></a>
+          <li class="slide"></li>
+        </ul>
+      </nav>
+    <section>
+      <div
+        class="title"
+        style="
+          position: absolute;
+          top: 15%;
+          left: 62.5%;
+          transform: translateX(-50%);
+        "
+      >
+        <span>Tic Tac Toe</span
+        ><span
+          ><a href="calculator.html">A Javascript Game</a>
+        </span>
+      </div>
+    </section>
+
+    <div class="calculator">
+        <div class="board" id="board">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+          </div>
+          <div class="winning-message" id="winningMessage">
+            <div data-winning-message-text></div>
+            <br />
+            <button id="restartButton">Restart</button>
+          </div>
+      
+          <div class="container2">
+            <div class="inner">
+              <span><i class="fa fa-question"></i></span>
+              <h1>How to play Tic Tac Tie?</h1>
+              <p>
+                Step 1: Place the Green shape on one of the 9 places that you prefer on the grid.
+              </p>
+              <p>
+                Step 2: Let the second player place his Shape on the grid piece he
+                likes.
+              </p>
+              <p>
+                Continue until one of you has a row of 3 of your Shape or until al 9
+                spots are full.
+              </p>
+      
+              <h2>Good luck and have fun!</h2>
+            </div>
+          </div>
+      
+      
+        
+    </div>
+
+   
+    <script src="assets/game.js"></script>
+    <script src="../assets/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
