@@ -16,7 +16,7 @@ body {
   .calculator {
     position: absolute;
     left: 65%;
-    top: 60%;
+    top: 45%;
     transform: translate(-50%, -50%);
     
   }
@@ -24,8 +24,8 @@ body {
   
 
 .button {
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
     font-size: 25px;
     margin: 4px;
     cursor: pointer;
@@ -43,7 +43,7 @@ border: none;
 }
 
 .textview {
-    width: 503px;
+    width: 343px;
     margin: 5px;
     font-size: 25px;
     padding: 5px;
