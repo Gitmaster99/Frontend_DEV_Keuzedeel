@@ -1,0 +1,1049 @@
+.top-svg {
+display: none;
+    
+    @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+
+*{
+  box-sizing: border-box;
+}
+
+
+
+.wrapper {
+  position: relative;
+  max-width: 720px;
+  width: 50vw;
+  margin: 0 auto;
+  height: 50vh;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.wrapper h2 span {
+  display: inline-block;
+  color: #161e2b;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+.highlight{
+  box-shadow: 0px -3px 0px 0px #00FFA7 inset;
+  transition: box-shadow 150ms ease-in-out;
+}
+
+.highlight:hover {
+    box-shadow: 0px -16px 0px 0px #00FFA7 inset;
+}
+
+.container svg {
+  width: 100%;
+  overflow: visible;
+}
+/* 
+svg {
+  fill: none;
+  stroke: #fbd42c;
+  stroke-width: 3px;
+  stroke-dasharray: 722.794677734375;
+  stroke-dashoffset: -722.794677734375;
+  animation: draw 1s 2 alternate ease-in-out forwards;
+}
+
+svg:hover {
+  animation: draw 1s infinite alternate ease-in-out;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: -722.794677734375;
+  }
+
+  50% {
+    stroke-dashoffset: -72.794677734375;
+    stroke-dasharray: 400;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+} */
+
+
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+  
+  30%{
+    transform: scale(1.1);
+  }
+  
+  60%{
+    transform: scale(1);
+  }
+}
+
+
+#laptop,
+#man,
+#plant,
+#Path_529,
+#Ellipse_112,
+#Ellipse_113,
+#Ellipse_114,
+#Ellipse_115,
+#Ellipse_116,
+#Ellipse_117 {
+  transform-origin: center;
+  animation: scale 1.4s ease-out 1 backwards;
+}
+
+#laptop{
+  animation-delay: 0.6s;
+}
+
+#man,
+#Ellipse_112,
+#Ellipse_116 {
+  animation-delay: 0.3s;
+}
+
+#plant,
+#Ellipse_1145,
+#Ellipse_117 {
+  animation-delay: 0.5s;
+}
+
+#Ellipse_113,
+#Ellipse_115 {
+  animation-delay: 0.8s;
+}
+
+
+@media screen and (max-width: 600px) {
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+
+*{
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  color: #777;
+  font-family: "Lato", "Roboto", sans-serif;
+  overflow-y: scroll;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  /*   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%); */
+}
+
+.wrapper h2 span {
+  display: inline-block;
+  color: #161e2b;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+.highlight{
+  box-shadow: 0px -3px 0px 0px #00FFA7 inset;
+  transition: box-shadow 150ms ease-in-out;
+}
+
+.highlight:hover {
+    box-shadow: 0px -16px 0px 0px #00FFA7 inset;
+}
+
+.container svg {
+  width: 100%;
+  overflow: visible;
+}
+/* 
+svg {
+  fill: none;
+  stroke: #fbd42c;
+  stroke-width: 3px;
+  stroke-dasharray: 722.794677734375;
+  stroke-dashoffset: -722.794677734375;
+  animation: draw 1s 2 alternate ease-in-out forwards;
+}
+
+svg:hover {
+  animation: draw 1s infinite alternate ease-in-out;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: -722.794677734375;
+  }
+
+  50% {
+    stroke-dashoffset: -72.794677734375;
+    stroke-dasharray: 400;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+} */
+
+
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+  
+  30%{
+    transform: scale(1.1);
+  }
+  
+  60%{
+    transform: scale(1);
+  }
+}
+
+
+#laptop,
+#man,
+#plant,
+#Path_529,
+#Ellipse_112,
+#Ellipse_113,
+#Ellipse_114,
+#Ellipse_115,
+#Ellipse_116,
+#Ellipse_117 {
+  transform-origin: center;
+  animation: scale 1.4s ease-out 1 backwards;
+}
+
+#laptop{
+  animation-delay: 0.6s;
+}
+
+#man,
+#Ellipse_112,
+#Ellipse_116 {
+  animation-delay: 0.3s;
+}
+
+#plant,
+#Ellipse_1145,
+#Ellipse_117 {
+  animation-delay: 0.5s;
+}
+
+#Ellipse_113,
+#Ellipse_115 {
+  animation-delay: 0.8s;
+}
+
+
+@media screen and (max-width: 600px) {
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+
+*{
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  color: #777;
+  font-family: "Lato", "Roboto", sans-serif;
+  overflow-y: scroll;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  /*   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%); */
+}
+
+.wrapper h2 span {
+  display: inline-block;
+  color: #161e2b;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+.highlight{
+  box-shadow: 0px -3px 0px 0px #00FFA7 inset;
+  transition: box-shadow 150ms ease-in-out;
+}
+
+.highlight:hover {
+    box-shadow: 0px -16px 0px 0px #00FFA7 inset;
+}
+
+.container svg {
+  width: 100%;
+  overflow: visible;
+}
+/* 
+svg {
+  fill: none;
+  stroke: #fbd42c;
+  stroke-width: 3px;
+  stroke-dasharray: 722.794677734375;
+  stroke-dashoffset: -722.794677734375;
+  animation: draw 1s 2 alternate ease-in-out forwards;
+}
+
+svg:hover {
+  animation: draw 1s infinite alternate ease-in-out;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: -722.794677734375;
+  }
+
+  50% {
+    stroke-dashoffset: -72.794677734375;
+    stroke-dasharray: 400;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+} */
+
+
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+  
+  30%{
+    transform: scale(1.1);
+  }
+  
+  60%{
+    transform: scale(1);
+  }
+}
+
+
+#laptop,
+#man,
+#plant,
+#Path_529,
+#Ellipse_112,
+#Ellipse_113,
+#Ellipse_114,
+#Ellipse_115,
+#Ellipse_116,
+#Ellipse_117 {
+  transform-origin: center;
+  animation: scale 1.4s ease-out 1 backwards;
+}
+
+#laptop{
+  animation-delay: 0.6s;
+}
+
+#man,
+#Ellipse_112,
+#Ellipse_116 {
+  animation-delay: 0.3s;
+}
+
+#plant,
+#Ellipse_1145,
+#Ellipse_117 {
+  animation-delay: 0.5s;
+}
+
+#Ellipse_113,
+#Ellipse_115 {
+  animation-delay: 0.8s;
+}
+
+
+@media screen and (max-width: 600px) {
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+
+*{
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  color: #777;
+  font-family: "Lato", "Roboto", sans-serif;
+  overflow-y: scroll;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  /*   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%); */
+}
+
+.wrapper h2 span {
+  display: inline-block;
+  color: #161e2b;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+.highlight{
+  box-shadow: 0px -3px 0px 0px #00FFA7 inset;
+  transition: box-shadow 150ms ease-in-out;
+}
+
+.highlight:hover {
+    box-shadow: 0px -16px 0px 0px #00FFA7 inset;
+}
+
+.container svg {
+  width: 100%;
+  overflow: visible;
+}
+/* 
+svg {
+  fill: none;
+  stroke: #fbd42c;
+  stroke-width: 3px;
+  stroke-dasharray: 722.794677734375;
+  stroke-dashoffset: -722.794677734375;
+  animation: draw 1s 2 alternate ease-in-out forwards;
+}
+
+svg:hover {
+  animation: draw 1s infinite alternate ease-in-out;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: -722.794677734375;
+  }
+
+  50% {
+    stroke-dashoffset: -72.794677734375;
+    stroke-dasharray: 400;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+} */
+
+
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+  
+  30%{
+    transform: scale(1.1);
+  }
+  
+  60%{
+    transform: scale(1);
+  }
+}
+
+
+#laptop,
+#man,
+#plant,
+#Path_529,
+#Ellipse_112,
+#Ellipse_113,
+#Ellipse_114,
+#Ellipse_115,
+#Ellipse_116,
+#Ellipse_117 {
+  transform-origin: center;
+  animation: scale 1.4s ease-out 1 backwards;
+}
+
+#laptop{
+  animation-delay: 0.6s;
+}
+
+#man,
+#Ellipse_112,
+#Ellipse_116 {
+  animation-delay: 0.3s;
+}
+
+#plant,
+#Ellipse_1145,
+#Ellipse_117 {
+  animation-delay: 0.5s;
+}
+
+#Ellipse_113,
+#Ellipse_115 {
+  animation-delay: 0.8s;
+}
+
+
+@media screen and (max-width: 600px) {
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+
+*{
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  color: #777;
+  font-family: "Lato", "Roboto", sans-serif;
+  overflow-y: scroll;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  /*   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%); */
+}
+
+.wrapper h2 span {
+  display: inline-block;
+  color: #161e2b;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+.highlight{
+  box-shadow: 0px -3px 0px 0px #00FFA7 inset;
+  transition: box-shadow 150ms ease-in-out;
+}
+
+.highlight:hover {
+    box-shadow: 0px -16px 0px 0px #00FFA7 inset;
+}
+
+.container svg {
+  width: 100%;
+  overflow: visible;
+}
+/* 
+svg {
+  fill: none;
+  stroke: #fbd42c;
+  stroke-width: 3px;
+  stroke-dasharray: 722.794677734375;
+  stroke-dashoffset: -722.794677734375;
+  animation: draw 1s 2 alternate ease-in-out forwards;
+}
+
+svg:hover {
+  animation: draw 1s infinite alternate ease-in-out;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: -722.794677734375;
+  }
+
+  50% {
+    stroke-dashoffset: -72.794677734375;
+    stroke-dasharray: 400;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+} */
+
+
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+  
+  30%{
+    transform: scale(1.1);
+  }
+  
+  60%{
+    transform: scale(1);
+  }
+}
+
+
+#laptop,
+#man,
+#plant,
+#Path_529,
+#Ellipse_112,
+#Ellipse_113,
+#Ellipse_114,
+#Ellipse_115,
+#Ellipse_116,
+#Ellipse_117 {
+  transform-origin: center;
+  animation: scale 1.4s ease-out 1 backwards;
+}
+
+#laptop{
+  animation-delay: 0.6s;
+}
+
+#man,
+#Ellipse_112,
+#Ellipse_116 {
+  animation-delay: 0.3s;
+}
+
+#plant,
+#Ellipse_1145,
+#Ellipse_117 {
+  animation-delay: 0.5s;
+}
+
+#Ellipse_113,
+#Ellipse_115 {
+  animation-delay: 0.8s;
+}
+
+
+@media screen and (max-width: 600px) {
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+
+*{
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  color: #777;
+  font-family: "Lato", "Roboto", sans-serif;
+  overflow-y: scroll;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  /*   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%); */
+}
+
+.wrapper h2 span {
+  display: inline-block;
+  color: #161e2b;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+.highlight{
+  box-shadow: 0px -3px 0px 0px #00FFA7 inset;
+  transition: box-shadow 150ms ease-in-out;
+}
+
+.highlight:hover {
+    box-shadow: 0px -16px 0px 0px #00FFA7 inset;
+}
+
+.container svg {
+  width: 100%;
+  overflow: visible;
+}
+/* 
+svg {
+  fill: none;
+  stroke: #fbd42c;
+  stroke-width: 3px;
+  stroke-dasharray: 722.794677734375;
+  stroke-dashoffset: -722.794677734375;
+  animation: draw 1s 2 alternate ease-in-out forwards;
+}
+
+svg:hover {
+  animation: draw 1s infinite alternate ease-in-out;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: -722.794677734375;
+  }
+
+  50% {
+    stroke-dashoffset: -72.794677734375;
+    stroke-dasharray: 400;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+} */
+
+
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+  
+  30%{
+    transform: scale(1.1);
+  }
+  
+  60%{
+    transform: scale(1);
+  }
+}
+
+
+#laptop,
+#man,
+#plant,
+#Path_529,
+#Ellipse_112,
+#Ellipse_113,
+#Ellipse_114,
+#Ellipse_115,
+#Ellipse_116,
+#Ellipse_117 {
+  transform-origin: center;
+  animation: scale 1.4s ease-out 1 backwards;
+}
+
+#laptop{
+  animation-delay: 0.6s;
+}
+
+#man,
+#Ellipse_112,
+#Ellipse_116 {
+  animation-delay: 0.3s;
+}
+
+#plant,
+#Ellipse_1145,
+#Ellipse_117 {
+  animation-delay: 0.5s;
+}
+
+#Ellipse_113,
+#Ellipse_115 {
+  animation-delay: 0.8s;
+}
+
+
+@media screen and (max-width: 600px) {
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+
+*{
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  color: #777;
+  font-family: "Lato", "Roboto", sans-serif;
+  overflow-y: scroll;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  /*   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%); */
+}
+
+.wrapper h2 span {
+  display: inline-block;
+  color: #161e2b;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+.highlight{
+  box-shadow: 0px -3px 0px 0px #00FFA7 inset;
+  transition: box-shadow 150ms ease-in-out;
+}
+
+.highlight:hover {
+    box-shadow: 0px -16px 0px 0px #00FFA7 inset;
+}
+
+.container svg {
+  width: 100%;
+  overflow: visible;
+}
+/* 
+svg {
+  fill: none;
+  stroke: #fbd42c;
+  stroke-width: 3px;
+  stroke-dasharray: 722.794677734375;
+  stroke-dashoffset: -722.794677734375;
+  animation: draw 1s 2 alternate ease-in-out forwards;
+}
+
+svg:hover {
+  animation: draw 1s infinite alternate ease-in-out;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: -722.794677734375;
+  }
+
+  50% {
+    stroke-dashoffset: -72.794677734375;
+    stroke-dasharray: 400;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+} */
+
+
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+  
+  30%{
+    transform: scale(1.1);
+  }
+  
+  60%{
+    transform: scale(1);
+  }
+}
+
+
+#laptop,
+#man,
+#plant,
+#Path_529,
+#Ellipse_112,
+#Ellipse_113,
+#Ellipse_114,
+#Ellipse_115,
+#Ellipse_116,
+#Ellipse_117 {
+  transform-origin: center;
+  animation: scale 1.4s ease-out 1 backwards;
+}
+
+#laptop{
+  animation-delay: 0.6s;
+}
+
+#man,
+#Ellipse_112,
+#Ellipse_116 {
+  animation-delay: 0.3s;
+}
+
+#plant,
+#Ellipse_1145,
+#Ellipse_117 {
+  animation-delay: 0.5s;
+}
+
+#Ellipse_113,
+#Ellipse_115 {
+  animation-delay: 0.8s;
+}
+
+
+@media screen and (max-width: 600px) {
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+}

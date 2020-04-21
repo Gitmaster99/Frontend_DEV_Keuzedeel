@@ -1,0 +1,189 @@
+.svg {
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  /* Circle mask for animated SVG files */
+  /**
+    Globe elements visibility options
+    **/
+}
+
+.svg .globe {
+  overflow: visible;
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  top: 50%;
+  left: 0;
+}
+
+.svg .globe__worldmap,
+.svg .globe__worldmap__front,
+.svg .globe__worldmap__back,
+.svg .globe__sphere,
+.svg .globe__outer_shadow,
+.svg .globe__reflections__bottom,
+.svg .globe__inner_shadow,
+.svg .globe__reflections__top,
+.svg .globe__outer_shadow {
+  position: absolute;
+  display: block;
+  margin: 0;
+  right: auto;
+  bottom: auto;
+}
+
+.svg .globe__sphere,
+.svg .globe__outer_shadow,
+.svg .globe__reflections__bottom,
+.svg .globe__inner_shadow,
+.svg .globe__reflections__top {
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 200px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.svg .globe__outer_shadow {
+  left: 0;
+  top: 186px;
+  width: 200px;
+  height: 30px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.svg .globe__worldmap {
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.svg .globe__worldmap__front,
+.svg .globe__worldmap__back {
+  left: 0;
+  top: 0;
+  width: 1000px;
+  height: 200px;
+  overflow: visible;
+  background-image: url(http://www.cakecounter.com/globe/white-blue/globe_images/worldmap_2x.svg);
+  background-repeat: no-repeat;
+}
+
+.svg .backimg7 {
+  background-image: url(http://www.cakecounter.com/globe/darkblue-electric-green/globe_images/worldmap_2x.svg);
+}
+
+.svg .spehere7 {
+  background-image: url(http://www.cakecounter.com/globe/darkblue-electric-green/globe_images/sphere.svg) !important;
+  display: block !important;
+}
+
+.svg .innersha7 {
+  background-image: url(http://www.cakecounter.com/globe/darkblue-electric-green/globe_images/inner_shadow.svg) !important;
+}
+
+.svg .globe__sphere {
+  background-image: url(http://www.cakecounter.com/globe/white-blue/globe_images/sphere.svg);
+  display: none;
+}
+
+.svg .globe__outer_shadow {
+  background-image: url(http://www.cakecounter.com/globe/white-blue/globe_images/outer_shadow.svg);
+}
+
+.svg .globe__reflections__top {
+  background-image: url(http://www.cakecounter.com/globe/white-blue/globe_images/reflections.svg);
+  display: none;
+}
+
+.svg .globe__reflections__bottom {
+  background-image: url(http://www.cakecounter.com/globe/white-blue/globe_images/reflections.svg);
+  display: none;
+}
+
+.svg .globe__inner_shadow {
+  background-image: url(http://www.cakecounter.com/globe/white-blue/globe_images/inner_shadow.svg);
+}
+
+.svg .globe__worldmap__front {
+  background-position: 0px 0px;
+  -webkit-animation: textureSpinreverse 8s linear infinite;
+          animation: textureSpinreverse 8s linear infinite;
+}
+
+.svg .globe__worldmap__back {
+  background-position: 0px -220px;
+  -webkit-animation: textureSpin 8s linear infinite;
+          animation: textureSpin 8s linear infinite;
+}
+
+@-webkit-keyframes textureSpin {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-47.5%);
+            transform: translateX(-47.5%);
+  }
+}
+
+@keyframes textureSpin {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-47.5%);
+            transform: translateX(-47.5%);
+  }
+}
+
+@-webkit-keyframes textureSpinreverse {
+  from {
+    -webkit-transform: translateX(-47.5%);
+            transform: translateX(-47.5%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes textureSpinreverse {
+  from {
+    -webkit-transform: translateX(-47.5%);
+            transform: translateX(-47.5%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .svg .container {
+    padding-left: 140px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .svg .container {
+    padding-left: 70px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .svg .container {
+    padding-left: 0px;
+  }
+}
+/*# sourceMappingURL=globe.css.map */
