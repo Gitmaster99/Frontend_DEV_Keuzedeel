@@ -70,6 +70,10 @@
   </head>
 
   <body>
+    <div class="nav-mobile-icon">
+      <a href="#" class="logo-site" aria-label="homepage">wb.</a>
+    </div>
+    
     <header>
       <a href="#" class="site-logo" aria-label="homepage">wb.</a>
       <nav class="main-nav">
@@ -79,12 +83,12 @@
             <a href="#" class="nav__link">About</a>
           </li>
           <li class="nav__list-item">
-            <a href="#" class="nav__link">Another page</a>
+            <a href="#" class="nav__link">Projects</a>
           </li>
           <li class="nav__list-item">
-            <a href="#" class="nav__link">Pricing</a>
+            <a href="#" class="nav__link">Skills</a>
           </li>
-          <li class="nav__list-item"><a href="#" class="nav__link">Blog</a></li>
+          <li class="nav__list-item"><a href="#" class="nav__link">Contact</a></li>
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </ul>
       </nav>
@@ -111,6 +115,48 @@
         </ul>
       </nav>
     </header>
+
+    <div class="header-2">
+     <!-- Menu Icon -->
+<div class="menuIcon">
+  <span class="icon icon-bars"></span>
+  <span class="icon icon-bars overlay"></span>
+  
+</div>
+
+
+<div class="overlay-menu">
+  <p href="#" class="logo-site" aria-label="homepage">wb.</p>
+  <ul id="menu">
+    
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">About</a></li>
+      <li><a href="#about">Projects</a></li>
+      <li><a href="#contact">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li class="nav__list-item">
+        <a
+          
+          href="#"
+          ><div class="switch-container">
+            <div id="boo" class="hide">
+              
+            </div>
+          <label class="switch">
+            <input id="toggle" type="checkbox" />
+            <div class="slider round"><div><div class="ghost" /></div></div>
+          </label>
+          </div></a
+        >
+      </li>
+      <li class="nav__list-item">
+        <a class="hire-btn" href="#">Hire me</a>
+      </li>
+      
+    </ul>
+
+</div>
+    </div>
 
     <main>
       <section class="home-intro">
@@ -1695,16 +1741,27 @@
           <p>I master</p>
           </span>
          
-          <span class="word wisteria">Front-End.</span>
+          <span class="word accent">Front-End.</span>
         </span>
-            <span class="word midnight">Back-End.</span>
+            <!-- <span class="word midnight">Back-End.</span>
             <span class="word belize">UI/UX.</span>
             <span class="word pomegranate">Figma.</span>
             <span class="word green">Version-Control.</span>
             <span class="word belize">HTML.</span>
           <span class="word wisteria">CSS/SCSS.</span>
             <span class="word midnight">Javascript.</span>
-            <span class="word pomegranate">Teamwork.</span>
+            <span class="word pomegranate">Teamwork.</span> -->
+
+            <span class="word accent">Back-End.</span>
+            <span class="word accent">UI/UX.</span>
+            <span class="word accent">Figma.</span>
+            <span class="word accent">Github.</span>
+            <span class="word accent">HTML.</span>
+            <span class="word accent">CSS/SCSS.</span>
+            <span class="word accent">PHP.</span>
+            <span class="word accent">MySQL.</span>
+            <span class="word accent">Javascript.</span>
+            <span class="word accent">Teamwork.</span>
           </p>
           
         </div>
@@ -1712,7 +1769,7 @@
 
       <!--This is the first section-->
     <div class="about-me-section">
-      <img class="about-img" src="./assets/images/about-me.jpg" alt="" />
+      <img class="about-img" src="./assets/img/about-me.jpg" alt="" />
       <h1>About Me</h1>
       <div class="line-about"></div>
       <p class="about-p">
@@ -1725,14 +1782,90 @@
         dolore eu fugiat nu pariatur excepteur sint occaecat.
       </p>
 
-      <a class="btn about-btn" href="">View Works</a>
+      <a class="btn about-btn" href="">Contact Me</a>
       <a class="btn about-btn-2" href="">Download CV</a>
       
     </div>
 
+  <section class="projects">
+    <div class="case-study-gallery">
+      <h1>Recent Works</h1>
+      <div class="line-recent-works"></div>
+      <div class="case-study study1">
+        <!-- <figure>
+          <img class="case-study_img" src="http://kimerizate.com/img/logo.svg" alt="Grupo Kimera logo"/>
+        </figure> -->
+        <div class="case-study__overlay">
+          <h2 class="case-study__title">Monkey Business</h2>
+          <a href="#" class="case-study__link">What's this?</a>
+        </div>
+      </div>
+      
+      <div class="case-study study2">
+       
+        <div class="case-study__overlay">
+          <h2 class="case-study__title">Gitmaster Portfolio</h2>
+          <a href="#" class="case-study__link">What's this?</a>
+        </div>
+      </div>
+      
+      <div class="case-study study3">
+       
+        <div class="case-study__overlay">
+          <h2 class="case-study__title">FutureWeb</h2>
+          <a href="#" class="case-study__link">What's this?</a>
+        </div>
+      </div>
+      
+      <div class="case-study study4">
+        
+        <div class="case-study__overlay">
+          <h2 class="case-study__title">Mario Bro's</h2>
+          <a href="#" class="case-study__link">What's this?</a>
+        </div>
+      </div>
+      
+      <div class="case-study study5">
+       
+        <div class="case-study__overlay">
+          <h2 class="case-study__title">Js Environment</h2>
+          <a href="#" class="case-study__link">What's this?</a>
+        </div>
+      </div>
+      
+      <div class="case-study study6">
+        
+        <div class="case-study__overlay">
+          <h2 class="case-study__title">Portfolio</h2>
+          <a href="#" class="case-study__link">What's this?</a>
+        </div>
+      </div>
+
+      <div class="line-v-recent"></div>
+    
+    </div>
+    </section>
+
+
+    <section class="skills">
+      <div class="container">
+        <div class="box">
+         
+          </div>
+        <div class="box left">
+        <p>I'm a pretty tall box that is the biggest</p>
+        </div>
+        <div class="box right">
+        <p>I'm a medium sized box</p>
+        </div>
+        <div class="box">
+         
+        </div>
+        </div>
+      </section>
 
       
-    
+    <script src="./assets/js/nav-mobile.js"></script>
     <script src="./assets/js/observers.js"></script>
     <script src="./assets/js/pc-animation.js"></script>
   </body>

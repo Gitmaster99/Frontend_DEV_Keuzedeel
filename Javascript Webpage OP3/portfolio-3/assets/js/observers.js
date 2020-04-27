@@ -97,9 +97,3 @@ changeWord();
 setInterval(changeWord, 4000);
 
 
-
-
-
-
-
-
