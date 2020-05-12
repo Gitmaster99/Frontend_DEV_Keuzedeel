@@ -69,6 +69,10 @@ header {
   width: 70%;
 }
 
+#navbar #navbar-toggler {
+  display: none;
+}
+
 /* Create a sticky/fixed navbar */
 /* Style the navbar links */
 /* Style the logo */

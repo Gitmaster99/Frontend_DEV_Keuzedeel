@@ -234,32 +234,6 @@ body {
   background-image: url("../img/portfolio.png");
 }
 
-.skills {
-  background: #fff;
-  min-height: 50vh;
-}
-
-.skills .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.skills .box {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 30%;
-          flex: 1 1 30%;
-  height: 50vh;
-}
-
-.skills .left {
-  background: #202020;
-}
-
-.skills .right {
-  background: #838383;
-}
-
 .svg .container {
   height: 480px;
   width: 350px;
